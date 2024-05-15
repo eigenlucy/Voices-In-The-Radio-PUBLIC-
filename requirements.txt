@@ -1,0 +1,10 @@
+selenium
+requests
+webdriver_manager
+fitz
+frontend
+tools
+PyMuPDF
+ipdb
+playsound
+openai
