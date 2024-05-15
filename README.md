@@ -19,7 +19,12 @@ enter the voices enviroment with `conda activate voices`
 ## install docker engine
 docker provides provides a container with linux and python 3.10 installed, required libraries, and the setup for chromedriver. follow the install guide for your OS detailed here: https://docs.docker.com/engine/install/
 
-## docker commands
+verify docker's status by ensuring `docker info` returns client information
+
+## docker configuration
+
 build the docker container with `docker build -t voices .`
 
 Mount local files to container and run bash on it with `docker run -it -p 4000:4000 -v $(pwd):/usr/src/app voices /bin/bash`
+
+# create a .env file containing your openai api key
