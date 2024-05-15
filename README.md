@@ -1,4 +1,4 @@
-# Voices In The Radio
+# **UNDER CONSTRUCTION** Voices In The Radio **UNDER CONSTRUCTION**
 A system agnostic guide to [fine tuning GPT models](https://platform.openai.com/docs/guides/fine-tuning) using Conda and Docker based on the workflow used in our [Opensauce 2024](https://opensauce.com/) project "Voices in the Radio".
 
 # clone/download this repo
@@ -32,3 +32,5 @@ build the docker container with `docker build -t voices .`
 Mount local files to container and run bash on it with `docker run -it -p 4000:4000 -v $(pwd):/usr/src/app voices /bin/bash`
 
 # create a .env file containing your openai api key
+
+## for TTS via [Eleven Labs](https://elevenlabs.io/), enter your API key. 
