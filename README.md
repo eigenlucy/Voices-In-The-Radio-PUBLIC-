@@ -31,6 +31,13 @@ build the docker container with `docker build -t voices .`
 
 Mount local files to container and run bash on it with `docker run -it -p 4000:4000 -v $(pwd):/usr/src/app voices /bin/bash`
 
-# create a .env file containing your openai api key
+# create a .env file containing your api keys
+create a file called `.env` to hold sensitive variable. Make sure this file is listed in your `.gitignore` file to ensure you aren't leaking your keys! **Make sure you do not list API keys, voice IDs, fine tuned model IDs, or any oth sensitive data in your .py scripts!! They should all be in `.env`!**
+## Enter your OpenAI API key:
+`OPENAI_API_KEY="API_KEY_GOES_HERE"`
 
-## for TTS via [Eleven Labs](https://elevenlabs.io/), enter your API key. 
+## for TTS via [Eleven Labs](https://elevenlabs.io/), enter your API key and voice IDs.
+`eleven_labs_api_key="ELEVEN_LABS_API_KEY_GOES_HERE"`
+If you'd like to assign multiple models different voices, assign each voice ID with a differenent name to be selected from `.env` in the given model's python script.
+`eleven_labs_voice1_id="ELEVEN_LABS_VOICE1_ID"`
+`eleven_labs_voice2_id="ELEVEN_LABS_VOICE2_ID"`
