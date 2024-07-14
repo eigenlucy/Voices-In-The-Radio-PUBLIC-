@@ -17,7 +17,7 @@ enter the **voices** enviroment with `conda activate voices`
 
 **Use `conda activate` to return to the base enviroment and `conda deactivate` to exit conda.**
 
-cd into the folder containing this repo. make sure you are in the folder containing requirements.txt and inside the **voices** conda enviroment, then run `pip install -r requirements.txt`
+cd into the folder containing this repo. make sure you are in the folder containing requirements.txt and inside the **voices** conda enviroment, then run `conda install pip && pip install -r requirements.txt`
 
 # docker
 ## install docker engine
